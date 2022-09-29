@@ -5,15 +5,13 @@ import Footer from "./layout/Footer";
 import HeroSection from "./layout/HeroSection";
 import MainSection from "./layout/MainSection";
 import Navbar from "./layout/Navbar";
+import HomePage from "./pages/Hompage";
 
 function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <MainSection />
-      <CtaSection />
-      <Footer />
+      <HomePage />
     </div>
   );
 }
