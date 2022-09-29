@@ -10,7 +10,7 @@ const Button = ({ children, className = "", ...rest }: ButtonProps) => {
   return (
     <button
       {...rest}
-      className={`rounded-full bg-cyan py-2 px-4 font-bold text-white text-sm ${className}`}
+      className={`rounded-full bg-cyan py-2 px-4 font-bold text-white text-sm hover:bg-cyan-hover ${className}`}
     >
       {children}
     </button>

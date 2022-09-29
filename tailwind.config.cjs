@@ -39,6 +39,7 @@ module.exports = {
     },
     colors: {
       'cyan': 'hsl(180, 66%, 49%)',
+      'cyan-hover': 'rgba(41,199,199,0.7)',
       'dark-violet': "hsl(257, 27%, 26%)",
       'danger': 'hsl(0, 87%, 67%)',
       'tomato': 'tomato',
