@@ -29,7 +29,8 @@ const ShortenSection = () => {
     }
   };
 
-  const handleUrlShortening = () => {
+  const handleUrlShortening = (e: any) => {
+    e.preventDefault();
     if (url.length === 0) {
       setError(true);
       return;
@@ -52,7 +53,7 @@ const ShortenSection = () => {
   return (
     <>
       <div className="flex items-center flex-col md:flex-row -mt-[172px] p-8 md:p-12 md:px-20 justify-center gap-6 bg-dark-violet bg-[url('/src/assets/bg-shorten-desktop.svg')] rounded-xl">
-        <div className="w-[100%] relative ">
+        <form onSubmit={handleUrlShortening} className="w-[100%] relative ">
           <input
             value={url}
             onChange={handleSetUrl}
@@ -69,7 +70,7 @@ const ShortenSection = () => {
               {errorMessage}
             </p>
           )}
-        </div>
+        </form>
         <button
           className="bg-cyan rounded-md text-white font-bold min-w-[180px] h-[60px] w-[100%] md:w-[180px] disabled:bg-gray mt-4 md:mt-[0px]"
           onClick={handleUrlShortening}
